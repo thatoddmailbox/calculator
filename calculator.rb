@@ -1,8 +1,12 @@
 require_relative "./mainmenu"
 
+def root(num_1,num_2)
+  return num_1.sqrt(num_2)
+end
+
 def division(num1,num2)
   return "#{num1/num2}" 
-  end
+end
 
 def power(numbers)
   total_product=0
