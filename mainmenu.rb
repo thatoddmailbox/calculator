@@ -48,6 +48,12 @@ def main_menu()
     percent
     return true
   end
+  if operation == "f-c"
+    print "Fahrenheit temperature: "
+    num = gets.chomp.to_f
+    puts "#{num} degrees F is #{(((num - 32) / 9) * 5).to_f.round(2)} degrees C"
+    return true
+  end
   
   asking_for_numbers = true
   numbers = []
