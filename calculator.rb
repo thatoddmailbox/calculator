@@ -2,15 +2,17 @@ require_relative "./mainmenu"
 require_relative "./percentage"
 
 $cache = Hash.new
+
+#starting numbers
 $cache[0] = 1
 $cache[1] = 1
 $cache[2] = 2
 
 def fib(n)
   if $cache.has_key?(n)
-    return $cache[n]
+    return $cache[n] # return pre-calculated value
   end
-  $cache[n] = fib(n - 1) + fib(n - 2)
+  $cache[n] = fib(n - 1) + fib(n - 2) # otherwise calculate it and save it
   return $cache[n]
 end
 
