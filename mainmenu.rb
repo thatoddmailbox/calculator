@@ -11,11 +11,9 @@ def main_menu()
   end
   
   if operation == "root"
-    print "Number 1: "
-    num1 = gets.chomp.to_i
-    print "Number 2: "
-    num2 = gets.chomp.to_i
-    puts "Result: #{root(num1, num2)}"
+    print "Number: "
+    num = gets.chomp.to_i
+    puts "Result: #{root(num)}"
     return true
   end
   if operation == "%"
