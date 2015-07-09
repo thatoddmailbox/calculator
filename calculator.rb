@@ -1,7 +1,7 @@
 require_relative "./mainmenu"
 
 def root(num_1)
-  return math.sqrt(num_!)
+  return math.sqrt(num_1)
 end
 
 def division(num1,num2)
