@@ -45,7 +45,7 @@ def main_menu()
       elsif operation == "-"
         puts subtraction(numbers)        
       elsif operation == "x"
-        puts multiplication(numbers)        
+        puts multiply(numbers)        
       elsif operation == "/"
         puts division(numbers)
       else
