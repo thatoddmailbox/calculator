@@ -16,6 +16,12 @@ def main_menu()
     puts "Result: #{root(num)}"
     return true
   end
+  if operation == "fib"
+    print "Index: "
+    num = gets.chomp.to_i
+    puts "Result: #{fib(num - 1)}"
+    return true
+  end
   if operation == "%"
     percent
     return true

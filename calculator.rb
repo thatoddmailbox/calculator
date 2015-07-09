@@ -1,6 +1,18 @@
 require_relative "./mainmenu"
 require_relative "./percentage"
 
+$cache = Hash.new
+$cache[0] = 1
+$cache[1] = 1
+$cache[2] = 2
+
+def fib(n)
+  if $cache.has_key?(n)
+    return $cache[n]
+  end
+  $cache[n] = fib(n - 1) + fib(n - 2)
+  return $cache[n]
+end
 
 def root(num_1)
   return Math.sqrt(num_1)
