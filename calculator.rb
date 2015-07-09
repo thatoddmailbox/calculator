@@ -1,12 +1,9 @@
 require_relative "./mainmenu"
-
-def root(num_1)
-  return math.sqrt(num_!)
-end
+require_relative "./percentage"
 
 def division(num1,num2)
   return "#{num1/num2}" 
-end
+  end
 
 def power(numbers)
   total_product=0
