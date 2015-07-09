@@ -2,7 +2,7 @@ def main_menu()
   puts "Calculator"
   puts
   
-  puts "Select operation or type 'quit' to quit: "
+  print "Select operation or type 'quit' to quit: "
   operation = gets.chomp
   
   if operation == "quit"
@@ -26,7 +26,7 @@ def main_menu()
   
   while asking_for_numbers do
     # keep asking for a number
-    puts "Enter number or '=': "
+    print "Enter number or '=': "
     number = gets.chomp
     if number == "="
       # do calculation
