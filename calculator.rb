@@ -4,6 +4,7 @@ def multiply(numbers)
     total_product=total_product*number
   end
   return total_product
+end
 
 def addition(numbers)
   sum = 0
