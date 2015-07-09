@@ -40,17 +40,21 @@ def main_menu()
     number = gets.chomp
     if number == "="
       # do calculation
+      result = 0
       if operation == "+"
-        puts addition(numbers)
+        result = addition(numbers)
       elsif operation == "-"
-        puts subtraction(numbers)        
+        result = subtraction(numbers)        
       elsif operation == "x"
-        puts multiply(numbers)        
+        result = multiply(numbers)        
       elsif operation == "/"
-        puts division(numbers)
+        result = division(numbers)        
+      elsif operation == "^"
+        result = power(numbers)
       else
-        puts "Unknown operation"
+        result = "Unknown operation"
       end
+      puts "Reuslt: #{result}"
       break
     else
       numbers << number.to_i # add number to array
