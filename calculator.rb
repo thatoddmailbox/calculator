@@ -36,6 +36,10 @@ def power(numbers)
   return total_product
 end    
 
+def subtraction(num1,num2)
+  return "#{num1-num2}"
+end
+
 def multiply(numbers)
   total_product=1
   numbers.each do |number|
