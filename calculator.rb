@@ -1,3 +1,17 @@
+def power(numbers)
+  total_product=0
+  first_time=true
+  numbers.each do |number|
+    if first_time==true
+      total_product=number
+      first_time=false
+    else
+      total_product=total_product**number
+    end
+  end
+  return total_product
+end    
+
 def multiply(numbers)
   total_product=1
   numbers.each do |number|
