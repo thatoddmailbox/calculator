@@ -24,17 +24,17 @@ def main_menu()
   end
   if operation == "/"
     print "number 1: "
-    num1 = gets.chomp.to_i
+    num1 = gets.chomp.to_f
     print "number 2: "
-    num2 = gets.chomp.to_i
+    num2 = gets.chomp.to_f
     puts "Result: #{division(num1, num2)}"
     return true
   end
   if operation == "-"
     print "number 1: "
-    num1 = gets.chomp.to_i
+    num1 = gets.chomp.to_f
     print "number 2: "
-    num2 = gets.chomp.to_i
+    num2 = gets.chomp.to_f
     puts "Result: #{subtraction(num1, num2)}"
     return true
   end
@@ -75,7 +75,7 @@ def main_menu()
       puts "Result: #{result}"
       break
     else
-      numbers << number.to_i # add number to array
+      numbers << number.to_f # add number to array
     end
   end
   return true
