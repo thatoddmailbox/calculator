@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 def division(num1,num2)
@@ -8,6 +9,22 @@ def division(num1,num2)
 
 
 =======
+=======
+def power(numbers)
+  total_product=0
+  first_time=true
+  numbers.each do |number|
+    if first_time==true
+      total_product=number
+      first_time=false
+    else
+      total_product=total_product**number
+    end
+  end
+  return total_product
+end    
+
+>>>>>>> 5350a07844aaa3cdc7fe6325ab646827917bc92b
 def multiply(numbers)
   total_product=1
   numbers.each do |number|
