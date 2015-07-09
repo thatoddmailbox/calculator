@@ -1,15 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 
 def division(num1,num2)
   return "#{num1/num2}" 
   end
 
-
-
-=======
-=======
 def power(numbers)
   total_product=0
   first_time=true
@@ -24,7 +19,6 @@ def power(numbers)
   return total_product
 end    
 
->>>>>>> 5350a07844aaa3cdc7fe6325ab646827917bc92b
 def multiply(numbers)
   total_product=1
   numbers.each do |number|
@@ -96,4 +90,4 @@ while true do
     break
   end
 end
->>>>>>> f8b8dbaa1a82810246d3194c9a06209721f19198
+
