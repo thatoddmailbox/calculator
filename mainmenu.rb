@@ -10,6 +10,14 @@ def main_menu()
     return false
   end
   
+  if operation == "root"
+    print "Number 1: "
+    num1 = gets.chomp.to_i
+    print "Number 2: "
+    num2 = gets.chomp.to_i
+    puts "Result: #{root(num1, num2)}"
+    return true
+  end
   if operation == "%"
     percent
     return true
@@ -38,7 +46,7 @@ def main_menu()
       else
         result = "Unknown operation"
       end
-      puts "Reuslt: #{result}"
+      puts "Result: #{result}"
       break
     else
       numbers << number.to_i # add number to array
